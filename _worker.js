@@ -14,39 +14,13 @@ let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
 let MainData = `
-vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@[2a06:98c1:3121::4e55:5c44]:443?encryption=none&security=tls&sni=ZyH.Z07.Us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zYh.z07.uS.kg&path=%2FwXzEwTHQf29TzsAi%2FdHMuaHBjLnR3%3Fed%3D2560#%F0%9F%92%A6%20BPB%20-%20Clean%20IP_1%20%3A%20443
-vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@[2a06:98c1:56::7e10:7780]:443?encryption=none&security=tls&sni=ZYH.z07.US.kG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyH.Z07.US.Kg&path=%2F7uflGJA9bhfKgVv7%2FdHMuaHBjLnR3%3Fed%3D2560#%F0%9F%92%A6%20BPB%20-%20Domain_2%20%3A%20443
-vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@[2a06:98c1:56::7e10:7780]:443?encryption=none&security=tls&sni=ZyH.Z07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.z07.us.kG&path=%2FYGk9YXEx3c5T0oUR%2FdHMuaHBjLnR3%3Fed%3D2560#%F0%9F%92%A6%20BPB%20-%20IPv4_2%20%3A%20443
-vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@[2606:4700:59::450:4bb8]:443?encryption=none&security=tls&sni=zyh.z07.us.kG&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=ZYH.Z07.Us.KG&path=%2FcBZeU7p2MjZcNN0m%2FdHMuaHBjLnR3%3Fed%3D2560#%F0%9F%92%A6%20BPB%20-%20IPv6_1%20%3A%20443
-vless://b2ca329a-f595-4b17-92ec-c59604e64f9c@[2606:4700:e::e99:6994]:443?encryption=none&security=tls&sni=Zyh.z07.US.kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zyh.Z07.us.KG&path=%2F6TPPO9YtrKC9huUf%2FdHMuaHBjLnR3%3Fed%3D2560#%F0%9F%92%A6%20BPB%20-%20IPv6_2%20%3A%20443
-vless://b9b4bbd0-2579-468e-8cb3-c86bc0953036@[2606:4700:3036:cc:b3c2:483c:e3a5:58d8]:443?encryption=none&security=tls&sni=notls.zcr07.us.kg&fp=random&type=ws&host=notls.zcr07.us.kg&path=%2F%3Fed%3D2560#1
-trojan://trojan@[2606:4700:3036:0:6c:dc3f:fe74:90e7]:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#10
-trojan://trojan@[2606:4700:3036:0:8ec2:d368:19f8:db00]:8443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#11
-trojan://trojan@[2606:4700:3036:33:d6ea:8dba:5115:ab94]:2053?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#12
-trojan://trojan@[2606:4700:3036::aa:1fb2:918b]:2083?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#13
-trojan://trojan@[2606:4700:9aeb::2993:8fe]:2087?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#14
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:a0::20e8:32cd]:8443?encryption=none&security=tls&sni=ygcf.zcr07.us.kg&fp=random&type=ws&host=ygcf.zcr07.us.kg&path=%2Fpyip%3Dts.hpc.tw#2%20hk%60
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:9b0f::3664:19c5]:8443?encryption=none&security=tls&sni=ygc.z07.us.kg&fp=random&type=ws&host=ygc.z07.us.kg&path=%2Fpyip%3Dts.hpc.tw#3%20Fr
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:e2::3e80:4f3a]:443?encryption=none&security=tls&sni=ygc.zbb07.filegear-sg.me&fp=random&type=ws&host=ygc.zbb07.filegear-sg.me&path=%2Fpyip%3Dts.hpc.tw#4
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:9a9c::2d94:24c7]:443?encryption=none&security=tls&sni=ygcf.zbb.dns-dynamic.net&fp=random&type=ws&host=ygcf.zbb.dns-dynamic.net&path=%2Fpyip%3Dts.hpc.tw#5%20Fr
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:8d93::580f:286f]:8443?encryption=none&security=tls&sni=ygc.z07.us.kg&fp=random&type=ws&host=ygc.z07.us.kg&path=%2Fpyip%3Dts.hpc.tw#6%20Fr
-vless://a66b4e21-3a80-4b08-8ce3-7c312538f847@[2606:4700:8dd4::6295:422b]:443?encryption=none&security=tls&sni=ygcf.zcr07.us.kg&fp=random&type=ws&host=ygcf.zcr07.us.kg&path=%2Fpyip%3Dts.hpc.tw#7%20Fr
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:15::2195:1b51]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#8%20wy
-vless://b9b4bbd0-2579-468e-8cb3-c86bc0953036@[2606:4700:3036:cc:b3c2:483c:e3a5:58d8]:443?encryption=none&security=tls&sni=notls.zcr07.us.kg&fp=random&type=ws&host=notls.zcr07.us.kg&path=%2FproxyIP%3D146.70.175.99#9%20wy
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:33:88c0:cc29:7006:df9d]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:f036:bdb9:7d5e:c711:5668]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036::aa:1fb2:918b]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:33:83e8:fb67:6d54:5167]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:0:6c:dc3f:fe74:90e7]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036::ea:b28d:467]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:0:8ec2:d368:19f8:db00]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3036:0:6c:dc3f:4290:cbe3]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#CMCC
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2803:f800:51::3b18:6764]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#HK
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:3008::9d6:302e]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#NL
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:e5::22ad:5671]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#SG
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2606:4700:24::3b5a:7d0a]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#US
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2a06:98c1:310c::4237:466d]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#US
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@[2a06:98c1:310c::4237:466d]:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2Fpyip%3D2c0f%3Af248%3A%3A#US-clone
+https://ygc.z07.us.kg/a66b4e21-3a80-4b08-8ce3-7c312538f847/pty
+https://kj8.zbb07.us.kg/sub/034b0d4e-8903-497c-87e1-d4c5b924994b#BPB-Normal
+https://tr7.zbb07.us.kg/zbb
+https://tr2.zcr07.us.kg/zbb
+https://ip5.zcr07.cloudns.biz/zbb
+https://vm.zcr07.filegear-sg.me/zbb
+https://edg.w07.us.kg/b4c6b261-922d-4732-b634-1cfdba80ec50
 
 `
 
