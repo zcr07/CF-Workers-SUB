@@ -14,33 +14,34 @@ let cacheTTL = 24 ;//小时，缓存时长
 
 //节点链接 + 订阅链接
 let MainData = `
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.8a7c5.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000001
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@wowowo14.top:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000002
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.877jj.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000003
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@tp482.cc:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000004
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@738mm.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000005
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@4hu12r.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000006
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.4hu12r.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000007
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@877jj.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000008
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@gogo.wowowo14.top:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000009
-trojan://zbb@www.bdbo1231.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0001
-vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.copymm666.ru:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2Fpyip%3D2c0f%3Af248%3A%3A#0002
-trojan://zbb@www.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0003
-trojan://zbb@www.tudoujiasu5.com:443?security=tls&sni=tr7.zbb07.us.kg&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2Fpyip%3Dts.hpc.tw#0004
-trojan://zbb@xs.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0005
-trojan://trojan@wap.bcrenb.top:2053?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#0006
-vless://37691131-db68-49bc-b1bb-840277c54390@cnstats.org:443?encryption=none&security=tls&sni=xb.zCr07.RR.NU&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=xb.zCR07.RR.Nu&path=%2FCrWeg4bf1ko5RFt3%2FdHMuaHBjLnR3%3Fed%3D2560#0007
-vless://034b0d4e-8903-497c-87e1-d4c5b924994b@www.467yy.com:2096?encryption=none&security=tls&sni=kj8.Zbb07.us.Kg&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=kj8.ZBb07.uS.kG&path=%2FsFH2wCSsFHuWCJqc%2FdHMuaHBjLnR3%3Fed%3D2560#0008
-vless://8abf406e-95c3-4886-aba4-dae9dd66124a@467yy.com:8443?encryption=none&security=tls&sni=ZBPB.R07.cloUDns.be&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=zbPB.r07.cLoUDNs.bE&path=%2FHGZGZfpkWumQKiv6%2FdHMuaHBjLnR3%3Fed%3D2560#0009
-trojan://trojan@8a8c8.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#001
-trojan://zbb@famslut.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2Fpyip%3Dts.hpc.tw#002
 trojan://zbb@gg.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#003
-trojan://trojan@hs.taokong8.com:8443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#004
-trojan://zbb@lz.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#005
-trojan://zbb@pt.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#006
+trojan://zbb@xs.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0005
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@gogo.wowowo14.top:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000009
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@4hu12r.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000006
+trojan://trojan@8a8c8.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#001
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.8a7c5.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000001
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.4hu12r.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000007
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.copymm666.ru:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2Fpyip%3D2c0f%3Af248%3A%3A#0002
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@738mm.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000005
+trojan://zbb@famslut.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2Fpyip%3Dts.hpc.tw#002
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@tp482.cc:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000004
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@wowowo14.top:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000002
+trojan://zbb@www.bdbo1231.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0001
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@www.877jj.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000003
 trojan://trojan@tudoujiasu5.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#007
-trojan://trojan@www.8a8c8.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#008
 trojan://trojan@www.anypornxvideos.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#009
+trojan://zbb@www.tudoujiasu5.com:443?security=tls&sni=tr7.zbb07.us.kg&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2Fpyip%3Dts.hpc.tw#0004
+trojan://trojan@www.8a8c8.com:443?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#008
+trojan://trojan@wap.bcrenb.top:2053?security=tls&sni=ygt.n06.us.kg&fp=randomized&type=ws&host=ygt.n06.us.kg&path=%2Fpyip%3Dts.hpc.tw#0006
+trojan://zbb@www.taokong8.com:443?security=tls&sni=tr7.zbb07.us.kg&alpn=h3&fp=randomized&type=ws&host=tr7.zbb07.us.kg&path=%2F%3Fed%3D2560#0003
+vless://37691131-db68-49bc-b1bb-840277c54390@cnstats.org:443?encryption=none&security=tls&sni=xb.zCr07.RR.NU&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=xb.zCR07.RR.Nu&path=%2FCrWeg4bf1ko5RFt3%2FdHMuaHBjLnR3%3Fed%3D2560#0007
+vless://6bf3079b-b0c4-4206-9578-e0b6813b102b@877jj.com:443?encryption=none&security=tls&sni=edg.zbb07.us.kg&alpn=h3&fp=random&type=ws&host=edg.zbb07.us.kg&path=%2F%3Fed%3D2560#000008
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@www.73d6d.com:2053?encryption=none&security=tls&sni=BpB.zcR07.CoM.MP&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=BPb.zCR07.coM.mP&path=%2Fgbtiw9QSach1LIYc%2FdHMuaHBjLnR3%3Fed%3D2560#d%2003
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@www.haijiaovip.com:2087?encryption=none&security=tls&sni=Bpb.ZcR07.coM.Mp&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bpB.ZcR07.cOm.mp&path=%2FL9DmIKb7BOGn7eJC%2FdHMuaHBjLnR3%3Fed%3D2560#d%2004
+vless://2b152099-977d-4b23-9e00-a7f9108c65ea@bp.zcr07.findhere.org:2096?encryption=none&security=tls&sni=bP.ZCR07.FiNdHERE.org&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=bp.ZcR07.fInDhere.oRg&path=%2F9Gzx8xlyvZ1lZJwN%2FdHMuaHBjLnR3%3Fed%3D2560#d%2006
+trojan://zbb@333.zbb.dns-dynamic.net:443?security=tls&sni=tr3.zcr07.us.kg&fp=random&type=ws&host=tr3.zcr07.us.kg&path=%2Fpyip%3Dts.hpc.tw#d%2007
+vless://14e3a0f4-96f0-49b8-b4ea-7c26ef211156@bpb.zcr07.com.mp:2096?encryption=none&security=tls&sni=bPB.zCr07.com.Mp&alpn=h2%2Chttp%2F1.1&fp=randomized&type=ws&host=Bpb.zcR07.COm.Mp&path=%2FwbsgvLZHGVhOxDwc%2FdHMuaHBjLnR3%3Fed%3D2560#d%2008
+
 
 
 
